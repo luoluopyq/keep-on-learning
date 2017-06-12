@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by YIYANG on 2017/6/12.
+ * puyq
  */
 @RestController
 @EnableAutoConfiguration
