@@ -1,0 +1,35 @@
+spring:
+#配置数据源
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/puyq?useUncode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+    max-wait: 10000
+    max-active: 50
+    test-on-borrow: false
+#配置持久层框架
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5Dialect
+#SpringMVC视图解析配置
+  mvc:
+      view:
+        prefix: /WEB-INF/jsp/
+        suffix: .jsp
+#配置redis信息
+  redis:
+    database: 0
+    host: localhost
+    password: WebRedis123
+    port: 6379
+    pool:
+      max-idle: 8
+      min-idle: 0
+      max-active: 10
+      max-wait: -1
+server:
+  sessionTimeout: 30
