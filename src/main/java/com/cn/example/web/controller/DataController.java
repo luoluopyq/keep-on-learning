@@ -29,9 +29,6 @@ public class DataController {
         p.setName(name);
         p.setPwd(pwd);
         Person p1=personRepository.save(p);
-
-
-
         logger.info("save 结束");
         return p;
     }
