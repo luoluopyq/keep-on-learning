@@ -30,9 +30,9 @@ public class RedisController {
         value.set(key,val);
         return "set ok";
     }
-    @RequestMapping("get")
+    @RequestMapping("/get")
     public String get(String key){
-        logger.debug("获取Redis:value=",value.get(key));
+        logger.info("获取Redis:value");
         return value.get(key);
     }
 
