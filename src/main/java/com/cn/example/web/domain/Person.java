@@ -1,8 +1,6 @@
 package com.cn.example.web.domain;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
@@ -11,6 +9,7 @@ import javax.persistence.Id;
 @Entity
 public class Person {
     @Id
+//    @GeneratedValue(JPA 的主键生成策略 auto,sequence,table,Identity)
     private String id;
     private String name;
     private String pwd;
